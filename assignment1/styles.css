@@ -1,0 +1,127 @@
+body {
+    margin:0px;
+    padding:0px;
+    font-family: merriweather,serif;
+    color: black;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main h1{
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    font: bold;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    letter-spacing: .2em;
+}
+
+a:active {
+    color: #f5f8fa;
+}
+
+.active{
+    color:  #0096cc;
+}
+
+.bar {
+    list-style-type: none;
+    align-self: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bar li {
+    display: inline;
+}
+
+.bar a {
+    margin-bottom: 4px;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.header {
+    height: 30%;
+    margin-top: 0;
+    margin-right: 0;
+    background-color: #f5f8fa;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.about-me {
+    margin-top: 5%;
+    width: 60%;
+    justify-self: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.text-title {
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.text-title::first-letter {
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.subtitle {
+    margin-top: 30px;
+    font:150;
+}
+
+#logo {
+    width:10vw;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+@media(max-width: 450px) {
+    .bar {
+        list-style-type: none;
+        align-self: right;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bar li {
+        justify-items: center;
+    }
+
+    .about-me {
+        width: 80%;
+    }
+}

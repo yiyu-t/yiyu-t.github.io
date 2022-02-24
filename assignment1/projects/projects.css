@@ -1,0 +1,19 @@
+.project-list {
+    align-self: center;
+    width: 60%;
+    margin-top: 5%;
+}
+
+.project-list div{
+    margin-bottom: 2vw;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0,0,0,.125);
+    border-bottom-style: solid;
+}
+
+@media (max-width:450px) {
+    .project-list {
+        width: 80%;
+    }
+}
+

@@ -1,0 +1,57 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 80%;
+    justify-self: center;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+@media (min-width:700px){
+    .gallery {
+    margin-top: 10%;
+    width: 80%;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 
+        1fr 1fr;
+    grid-template-columns: 
+        1fr 1fr 1fr;
+    grid-template-areas: 
+        "photo1 photo2 photo2"
+        "photo1 photo3 photo4";
+    column-gap: 5vw;
+    row-gap: 3vw;
+    }
+
+    img:hover {
+        transform: rotate(360deg);
+        transition: 500ms;
+    }
+
+    #photo1 {
+        padding-top: 7vw;
+        grid-area: photo1;
+        height: 40vw;
+    }
+
+    #photo2 {
+        grid-area: photo2;
+        width: 45vw;
+    }
+
+    #photo3 {
+        grid-area: photo3;
+        width: 20vw;
+    }
+
+    #photo4 {
+        grid-area: photo4;
+        width: 20vw;
+    }
+}
+
+
